@@ -4,7 +4,7 @@
   font-size: 16px;
   --prim-dark-blue: hsl(233, 47%, 7%);
   --prim-desat-blue: hsl(244, 38%, 16%);
-  --prim-soft-violet: hsl(277, 64%, 61%);
+  --prim-soft-violet: hsl(277, 61%, 61%);
   --neu-white: hsl(0, 0%, 100%);
   --neu-trans-white: hsla(0, 0%, 100%, 0.75);
   --neu-more-trans-white: hsla(0, 0%, 100%, 0.6);
@@ -31,10 +31,12 @@ main {
 }
 
 .container {
+  display: flex;
   width: 80%;
   text-align: center;
   border-radius: 8px;
   overflow: hidden;
+  flex-direction: column;
 }
 
 .mobile_img {
@@ -94,4 +96,41 @@ h1 span {
 .attribution a {
   color: hsl(228, 45%, 44%);
   text-decoration: none;
+}
+
+@media(min-width: 520px) {
+  .container {
+    width: 65%;
+    flex-direction: row;
+  }
+
+  .mobile_img {
+    display: none;
+  }
+  
+  .text {
+    width: 100%;
+    text-align: left;
+    padding: 60px 75px 50px 50px;
+  }
+
+  .text h1 {
+    margin-bottom: 30px;
+  }
+
+  .component {
+    flex-direction: row;
+    line-height: 2rem;
+    margin-top: 60px;
+    gap: 60px;
+  }
+
+  .desktop_img {
+    background-image: url(images/image-header-desktop.jpg);
+    background-color: var(--prim-soft-violet);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
 }
