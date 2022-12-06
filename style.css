@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+  font-size: 16px;
+  --prim-dark-blue: hsl(233, 47%, 7%);
+  --prim-desat-blue: hsl(244, 38%, 16%);
+  --prim-soft-violet: hsl(277, 64%, 61%);
+  --neu-white: hsl(0, 0%, 100%);
+  --neu-trans-white: hsla(0, 0%, 100%, 0.75);
+  --neu-more-trans-white: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--prim-dark-blue);
+  color: var(--neu-white);
+}
+
+main {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 80%;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mobile_img {
+  background-image: url(images/image-header-mobile.jpg);
+  background-color: var(--prim-soft-violet);
+  background-blend-mode: multiply;
+  background-size: cover;
+  width: 100%;
+  height: 240px;
+}
+
+.text {
+  background-color: var(--prim-desat-blue);
+  padding: 30px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+h1 span {
+  color: var(--prim-soft-violet);
+}
+
+.text p {
+  color: var(--neu-more-trans-white);
+  margin-bottom: 30px;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 1.7rem;
+}
+
+.component h2 {
+  font-size: 1.8rem;
+}
+
+.component span {
+  font-family: 'Lexend Deca', sans-serif;
+  text-transform: uppercase;
+  color: var(--neu-more-trans-white);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
